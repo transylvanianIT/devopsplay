@@ -1,6 +1,6 @@
 FROM python:3.9
 
-WORKDIR /calc
+WORKDIR /dockerpart
 
 COPY calculator.py requirements.txt ./
 
