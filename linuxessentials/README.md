@@ -37,7 +37,7 @@ At the end we start the server, otherwise it gave me something with server keep 
 service nginx start
 
 SOME ISSUES HAD:
-1. the on with nginx that even restarted it wouldnt work, if i nano after.
+1. the one with nginx that even restarted it wouldnt work, if i nano the text after.
 2. On my ubuntu, docker wouldnt run, so i had to use the vm ubuntu i had.
 
 thats it
