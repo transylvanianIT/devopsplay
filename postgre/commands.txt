@@ -1,0 +1,14 @@
+docker pull postgres
+docker run --name postgres-container -e POSTGRES_USER=ituser -e POSTGRES_PASSWORD=password -e POSTGRES_DB=company_db -p 5432:5432 -d postgres
+docker exec -it postgres-container bash
+psql -U ituser -d company_db
+docker cp ./3-db/dataset.sql postgres-container:/tmp/dataset.sql
+psql -U ituser -d company_db -f /tmp/dataset.sql
+SELECT COUNT(*) FROM employees;
+SELECT name FROM employees WHERE department = 'IT';
+SELECT department, MAX(salary) AS highest_salary, MIN(salary) AS lowest_salary FROM employees GROUP BY department;
+docker exec -it postgres-container pg_dump -U ituser company_db > company_db_dump.sql
+chmod +x setup_postgresql.sh
+./setup_postgresql.sh
+-v /home/lovecode/devopsplay/postgre:/var/lib/postgresql/data
+
