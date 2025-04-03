@@ -1,68 +1,9 @@
-70  jenkins status
-   71  jenkins start
-   72  docker
-   73  jenkins
-   74  jenkins status
-   75  docker run -it -p 8080:8080 ubuntu
-   76  netstat
-   77  netstat grep 8080
-   78  docker run -it ubuntu
-   79  docker run -it -p 80:8080 ubuntu
-   80  docker run -it -p 8080:8080 ubuntu
-   81  docker run -it -p 80:8080 ubuntu
-   82  docker run -it -p 80:8081 ubuntu
-   83  sudo docker run -it -p 8080:8080 ubuntu
-   84  dnf docker run -it -p 8080:8080 ubuntu
-   85  sudo docker run -it -p 8080:8080 ubuntu
-   86  yum repolist
-   87  systemctl docker status
-   88  docker
-   89  systemctl docker status
-   90  systemctl status docker
-   91  mkdir calc
-   92  cd cald
-   93  pwd
-   94  ls
-   95  cd calc
-   96  ls
-   97  pwd
-   98  python -v
-   99  python
-  100  python3
-  101  touch Dockerfile
-  102  ls
-  103  cat Dockerfile 
-  104  vi Dockerfile
-  105  cat Dockerfile
-  106  docker build -t calc-app .
-  107  vi Dockerfile
-  108  docker build -t calc-app .
-  109  vi Dockerfile
-  110  docker build -t calc-app .
-  111  vi Dockerfile
-  112  docker build -t calc-app .
-  113  vi Dockerfile
-  114  cat Dockerfile
-  115  docker build -t calc-app .
-  116  docker images
-  117  docker run -p 8080:8080 calc-app
-  118  docker run -p 9090:8080 calc-app
-  119  docker run -p 9090:8080 calc-app sh
-  120  docker run -p 9090:8080 calc-app 
-  121  docker exec -it calc-app sh
-  122  docker ps
-  123  docker build -t calc-app .
-  124  docker run -p 9090:8080 calc-app 
-  125  docker exec -it calc-app sh
-  126  docker run -p 9090:8080 calc-app 
-  127  docker build -t calc-app .
-  128  docker run -p 9090:8080 calc-app 
-  129  docker tag calc-app <lovecode23>/calculator-app:latest
-  130  docker tag calc-app <calc>/calculator-app:latest
-  131  docker tag calc-app <home/calc>/calculator-app:latest
-  132  docker images
-  133  docker tag calc-app lovecode23/calculator-app:latest
-  134  docker push lovecode23/calculator-app:latest
-  135  docker ps
-  136  history
-
+mkdir calc
+cd cald
+touch Dockerfile
+vi Dockerfile
+cat Dockerfile
+docker build -t calc-app .
+docker run -p 9090:8080 calc-app 
+docker tag calc-app lovecode23/calculator-app:latest
+docker push lovecode23/calculator-app:latest
