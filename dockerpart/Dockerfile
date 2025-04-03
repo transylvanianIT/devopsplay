@@ -2,7 +2,7 @@ FROM python:3.9
 
 WORKDIR /dockerpart
 
-COPY calculator.py requirements.txt ./
+COPY dockerpart/calculator.py dockerpart/requirements.txt ./
 
 RUN pip install --no-cache-dir -r requirements.txt
 
