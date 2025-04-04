@@ -1,0 +1,8 @@
+This part was ok also, didnt have any big problems, as i made a couple of days ago some bash script, playing bandit. At bandit overthewire labs.
+Again there are the commands.txt file they are as it goes:
+
+docker: in terminal norma.
+psql in the root when u do docker exec.
+and the select and so on in the database created.
+
+I can say the most headache gave me the bash script as we havent done too much at school, or more precisely never.
